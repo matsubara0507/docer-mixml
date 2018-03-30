@@ -21,6 +21,6 @@ RUN git clone https://github.com/rossberg/mixml.git
 WORKDIR mixml
 RUN make all
 ADD bin .
-# ENV PATH $HOME/mixml/bin:$PATH
+RUN chmod +x mixml
 
 CMD [ "./mixml" ]
